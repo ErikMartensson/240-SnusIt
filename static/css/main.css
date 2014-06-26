@@ -1,0 +1,168 @@
+body {
+	font-family: 'PT Serif', sans-serif;
+	background: url(/static/img/background.jpg) center center;
+	color: #F9F9F9;
+}
+
+h1 {
+	font-size: 126px;
+	text-shadow: 2px 2px 5px #383838;
+}
+
+.container {
+	padding-top: 40px;
+}
+
+.slide {
+	position:relative;
+	max-width: 400px;
+	max-height: 400px;
+	margin: 30px auto auto auto;
+}
+
+.slide img {
+	position: absolute;
+	left: 0;
+
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+
+	-webkit-animation-name: fade;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 16s;
+	-moz-animation-name: fade;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-duration: 16s;
+	-o-animation-name: fade;
+	-o-animation-timing-function: ease-in-out;
+	-o-animation-iteration-count: infinite;
+	-o-animation-duration: 16s;
+	animation-name: fade;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 16s;
+}
+
+/* Hacky responsive queries goes here */
+@media all and (max-width: 740px) {
+	h1 {
+		font-size: 96px;
+	}
+}
+@media all and (max-width: 590px) {
+	h1 {
+		font-size: 70px;
+	}
+
+	.container {
+		padding-top: 0;
+	}
+}
+@media all and (max-width: 360px) {
+	h1 {
+		font-size: 54px;
+	}
+}
+
+/* Slide stuff */
+
+@-webkit-keyframes fade {
+	0% {
+		opacity: 1;
+	}
+	17% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0;
+	}
+	92% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fade {
+	0% {
+		opacity: 1;
+	}
+	17% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0;
+	}
+	92% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fade {
+	0% {
+		opacity: 1;
+	}
+	17% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0;
+	}
+	92% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fade {
+	0% {
+		opacity: 1;
+	}
+	17% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0;
+	}
+	92% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.slide img:nth-of-type(1) {
+	-webkit-animation-delay: 12s;
+	-moz-animation-delay: 12s;
+	-o-animation-delay: 12s;
+	animation-delay: 12s;
+}
+.slide img:nth-of-type(2) {
+	-webkit-animation-delay: 8s;
+	-moz-animation-delay: 8s;
+	-o-animation-delay: 8s;
+	animation-delay: 8s;
+}
+.slide img:nth-of-type(3) {
+	-webkit-animation-delay: 4s;
+	-moz-animation-delay: 4s;
+	-o-animation-delay: 4s;
+	animation-delay: 4s;
+}
+.slide img:nth-of-type(4) {
+	-webkit-animation-delay: 0;
+	-moz-animation-delay: 0;
+	-o-animation-delay: 0;
+	animation-delay: 0;
+}
