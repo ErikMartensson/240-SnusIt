@@ -68,6 +68,18 @@ h1 {
 	}
 }
 
+#play-pause {
+	display: none;
+}
+
+@media handheld {
+	#play-pause {
+		display: fixed;
+		top: 10px;
+		left: 10px;
+	}
+}
+
 /* Slide stuff */
 
 @-webkit-keyframes fade {
