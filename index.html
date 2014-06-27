@@ -8,7 +8,7 @@ https://github.com/ErikMartensson/240-SnusIt
 	<meta charset="UTF-8">
 	<title>240 Snus it</title>
 	<link href="/static/img/favicon.png" rel="shortcut icon">
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet" type="text/css">
 	<link href="/static/css/main.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -16,10 +16,14 @@ https://github.com/ErikMartensson/240-SnusIt
 <body>
 
 	<!-- Annoying autoplaying sound goes here -->
-	<audio autoplay="true">
+	<audio id="song" autoplay="true">
 		<source src="/static/audio/classic.ogg" type="audio/ogg">
 		<source src="/static/audio/classic.mp3" type="audio/mpeg">
 	</audio>
+
+	<div id="play-pause">
+		<button class="btn btn-primary btn-small"><span class="glyphicon glyphicon-play"></span></button>
+	</div>
 
 	<div class="container">
 		<div class="row">
@@ -36,14 +40,24 @@ https://github.com/ErikMartensson/240-SnusIt
 		</div>
 	</div>
 	<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-	<script src="/static/js/jquery.jrumble.1.3.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
-		// $(function() {
-		// 	$('.shake').jrumble({
-		// 		speed: 100
-		// 	}).trigger('startRumble');
-		// });
+
+		$('#play-pause button').click(function() {
+			playPause();
+			$(this).find('span').toggleClass('glyphicon-play').toggleClass('glyphicon-pause');
+		});
+
+		function playPause() {
+			var elAudio = document.getElementById('song');
+
+			if (elAudio.paused) {
+				elAudio.play();
+			} else {
+				elAudio.pause();
+			}
+		}
+
 	</script>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
