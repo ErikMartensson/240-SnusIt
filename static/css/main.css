@@ -47,6 +47,13 @@ h1 {
 	animation-duration: 16s;
 }
 
+#play-pause {
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	z-index: 1;
+}
+
 /* Hacky responsive queries goes here */
 @media all and (max-width: 740px) {
 	h1 {
@@ -65,18 +72,6 @@ h1 {
 @media all and (max-width: 360px) {
 	h1 {
 		font-size: 54px;
-	}
-}
-
-#play-pause {
-	display: none;
-}
-
-@media handheld {
-	#play-pause {
-		display: fixed;
-		top: 10px;
-		left: 10px;
 	}
 }
 
