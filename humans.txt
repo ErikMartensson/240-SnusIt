@@ -1,0 +1,10 @@
+/* TEAM */
+	Creator: Erik Mårtensson
+	Contact: erik [at] acid.nu
+	From: Stockholm, Sweden
+
+/* SITE */
+	Last update: 2014-08-20
+	Language: Swedish
+	Doctype: HTML5
+	IDE: Sublime Text, Photoshop CC, Git
