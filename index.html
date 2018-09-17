@@ -3,10 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>240 Snus it</title>
-	<link href="/static/img/favicon.png" rel="shortcut icon">
-	<link href="/static/css/bootstrap.min.css" rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet" type="text/css">
-	<link href="/static/css/main.css" rel="stylesheet">
+	<meta name="description" content="The site for genuine Volvoraggare and Biltema enthusiasts. Baka löst!" />
+	<link href="static/img/favicon.png" rel="shortcut icon">
+	<link href="static/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet" type="text/css">
+	<link href="static/css/main.css" rel="stylesheet">
 	<meta name="author" content="Erik Mårtensson, erik@acid.nu">
 	<meta name="original-source" content="https://github.com/ErikMartensson/240-SnusIt">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -15,48 +16,53 @@
 
 	<!-- Annoying autoplaying sound goes here -->
 	<audio id="song" autoplay="true">
-		<source src="/static/audio/classic.ogg" type="audio/ogg">
-		<source src="/static/audio/classic.mp3" type="audio/mpeg">
+		<source src="static/audio/classic.ogg" type="audio/ogg">
+		<source src="static/audio/classic.mp3" type="audio/mpeg">
 	</audio>
 
 	<!-- Play/pause button for mobile devices -->
-	<div id="play-pause" class="visible-xs">
-		<button class="btn btn-success btn-small"><span class="glyphicon glyphicon-play"></span></button>
+	<div id="play-pause" class="h1" onClick="playPause()">
+		▶️
 	</div>
 
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 text-center">
-				<h1 class="shake">240 Snus it!</h1>
-				<div class="slide shake">
-					<img src="/static/img/snusit-1.jpg" class="img-circle img-responsive">
-					<img src="/static/img/snusit-2.jpg" class="img-circle img-responsive">
-					<img src="/static/img/snusit-3.jpg" class="img-circle img-responsive">
-					<img src="/static/img/snusit-4.jpg" class="img-circle img-responsive">
+				<h1>240 Snus it!</h1>
+				<div class="slide">
+					<img src="static/img/snusit-1.jpg" class="img-circle img-responsive">
+					<img src="static/img/snusit-2.jpg" class="img-circle img-responsive">
+					<img src="static/img/snusit-3.jpg" class="img-circle img-responsive">
+					<img src="static/img/snusit-4.jpg" class="img-circle img-responsive">
+					<img src="static/img/snusit-5.jpg" class="img-circle img-responsive">
+					<img src="static/img/snusit-6.jpg" class="img-circle img-responsive">
+
 				</div>
 			</div>
-			<div class="clearfix"></div>
+		</div>
+		<div class="row text-content">
+			<div class="col-xs-12 col-sm-offset-3 col-sm-6">
+				<p>
+					Har du en schysst 240 eller en söt snusselfie?
+				</p>
+				<p>
+					Skicka in dina bilder till <a href="mailto:prillan@240snusit.se">prillan@240snusit.se</a> för att synas här!
+				</p>
+			</div>
 		</div>
 	</div>
-	<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="/static/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
-
-		$('#play-pause button').click(function() {
-			playPause();
-			$(this).find('span').toggleClass('glyphicon-play').toggleClass('glyphicon-pause');
-		});
-
-		function playPause() {
-			var elAudio = document.getElementById('song');
-
-			if (elAudio.paused) {
-				elAudio.play();
+		const playPause = () => {
+			const button = document.getElementById('play-pause')
+			const audio = document.getElementById('song');
+			if (audio.paused) {
+				audio.play();
+				button.innerText = '⏸️'
 			} else {
-				elAudio.pause();
+				audio.pause();
+				button.innerText = '▶️'
 			}
 		}
-
 	</script>
 </body>
 </html>
