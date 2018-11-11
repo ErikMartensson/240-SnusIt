@@ -13,9 +13,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
 <body>
+	<script type="text/javascript">
+		const images = [1, 2, 3, 4]
+		const rand = images[Math.random() * images.length >> 0]
+		const body = document.getElementsByTagName('body')[0]
+		body.style.backgroundImage = `url(static/img/bg${rand}.jpg)`
+	</script>
 
-	<!-- Annoying autoplaying sound goes here -->
-	<audio id="song" autoplay="true">
+	<audio id="song">
 		<source src="static/audio/classic.ogg" type="audio/ogg">
 		<source src="static/audio/classic.mp3" type="audio/mpeg">
 	</audio>
@@ -30,13 +35,42 @@
 			<div class="col-xs-12 text-center">
 				<h1>240 Snus it!</h1>
 				<div class="slide">
-					<img src="static/img/snusit-1.jpg" class="img-circle img-responsive">
-					<img src="static/img/snusit-2.jpg" class="img-circle img-responsive">
-					<img src="static/img/snusit-3.jpg" class="img-circle img-responsive">
-					<img src="static/img/snusit-4.jpg" class="img-circle img-responsive">
-					<img src="static/img/snusit-5.jpg" class="img-circle img-responsive">
-					<img src="static/img/snusit-6.jpg" class="img-circle img-responsive">
-
+					<div class="item">
+						<div>
+							And here
+						</div>
+						<img src="static/img/snusit-4.jpg" class="img-responsive">
+					</div>
+					<div class="item">
+						<div>
+							Bajskörv
+						</div>
+						<img src="static/img/snusit-5.jpg" class="img-responsive">
+					</div>
+					<div class="item">
+						<div>
+							Eddie Meduza - könsrockare
+						</div>
+						<img src="static/img/eddie.jpg" class="img-responsive">
+					</div>
+					<div class="item">
+						<div>
+							Oscar Englundh
+						</div>
+						<img src="static/img/oscar-englundh.jpg" class="img-responsive">
+					</div>
+					<div class="item">
+						<div>
+							Ville Ericsson
+						</div>
+						<img src="static/img/ville-ericsson.jpg" class="img-responsive">
+					</div>
+					<div class="item">
+						<div>
+							Carl Heydl
+						</div>
+						<img src="static/img/carl-heydl.jpg" class="img-responsive">
+					</div>
 				</div>
 			</div>
 		</div>
