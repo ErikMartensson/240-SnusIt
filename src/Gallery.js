@@ -6,14 +6,20 @@ import './image-gallery.css'
 
 const GalleryContainer = styled.div`
 	margin: 1em auto 3em;
-	max-width: 400px;
+
+	.image-gallery {
+		margin: auto;
+		padding: 0 .6em;
+		max-width: 400px;
+	}
 
 	.image-gallery-slides {
 		max-width: 400px;
 		max-height: 400px;
-		border-radius: 50%;
-		overflow: hidden;
+
 		box-sizing: border-box;
+		overflow: hidden;
+		border-radius: 50%;
 	}
 
 	.image-gallery-description {
