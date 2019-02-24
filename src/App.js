@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
 	body {
 		font-family: "PT Serif";
 		font-weight: 400;
-		background: url(/static/img/bg${props => props.img}.jpg) no-repeat center;
+		background: url(/static/img/bg${props => props.img}.jpg) no-repeat top center;
 	}
 	a {
 		color: #68baff;
