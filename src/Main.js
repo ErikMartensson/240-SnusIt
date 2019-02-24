@@ -3,8 +3,12 @@ import styled from 'styled-components/macro'
 import Gallery from './Gallery'
 
 const Wrapper = styled.div`
-	max-width: 600px;
+	width: 600px;
 	margin: 0 auto 4em;
+
+	@media (max-width: 768px) {
+		width: 100%;
+	}
 `
 
 const Title = styled.h1`
@@ -27,14 +31,18 @@ const Title = styled.h1`
 `
 
 const TextBox = styled.div`
-	background: rgba(0, 0, 0, .6);
+	background: rgba(0, 0, 0, .8);
 	padding: .6em;
 	color: white;
 	font-size: 1.6rem;
-	margin-bottom: .4em;
+	margin: 0 2em .4em;
 
 	&:last-child {
-		margin: 0;
+		margin-bottom: 0;
+	}
+
+	@media (max-width: 768px) {
+		margin: 0 .6em .4em;
 	}
 `
 
