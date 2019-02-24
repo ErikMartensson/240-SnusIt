@@ -4,10 +4,18 @@ import Main from './Main'
 import PlayButton from './PlayButton'
 
 const GlobalStyle = createGlobalStyle`
+	html {
+		height: 100vh;
+	}
 	body {
 		font-family: "PT Serif";
 		font-weight: 400;
-		background: url(/static/img/bg${props => props.img}.jpg) no-repeat top center;
+		background: url(/static/img/bg${props => props.img}.jpg) no-repeat center;
+		background-size: cover;
+
+		@media (max-width: 768px) {
+			background-size: unset;
+		}
 	}
 	a {
 		color: #68baff;

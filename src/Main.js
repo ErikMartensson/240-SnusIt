@@ -11,6 +11,10 @@ const Wrapper = styled.div`
 	}
 `
 
+const Header = styled.header`
+	overflow: auto;
+`
+
 const Title = styled.h1`
 	font-size: 6.6rem;
 	text-align: center;
@@ -50,9 +54,9 @@ class Main extends Component {
 	render() {
 		return (
 			<Wrapper>
-				<header>
+				<Header>
 					<Title>240 Snus it!</Title>
-				</header>
+				</Header>
 				<Gallery/>
 				<TextBox>
 					Har du en schysst 240 eller en söt snusselfie?

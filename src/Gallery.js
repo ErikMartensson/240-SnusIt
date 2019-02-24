@@ -3,7 +3,6 @@ import styled from 'styled-components/macro'
 import ImageGallery from 'react-image-gallery'
 import './image-gallery.css'
 
-
 const GalleryContainer = styled.div`
 	margin: 1em auto 3em;
 
