@@ -35,6 +35,10 @@ const GalleryContainer = styled.div`
 
 const images = [
 	{
+		original: 'static/img/fans/kevin-vernersson.jpg',
+		description: 'Kevin Vernersson',
+	},
+	{
 		original: 'static/img/fans/william.jpg',
 		description: 'William',
 	},
