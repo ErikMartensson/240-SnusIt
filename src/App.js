@@ -8,14 +8,13 @@ const GlobalStyle = createGlobalStyle`
 		height: 100vh;
 	}
 	body {
-		font-family: "PT Serif";
-		font-weight: 400;
-		background: url(/static/img/bg${props => props.img}.jpg) no-repeat center;
+		font-family: "Source Sans Pro";
+		font-weight: 300;
+		background:
+			linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0)),
+			url(/static/img/bg${props => props.img}.jpg) no-repeat center;
 		background-size: cover;
-
-		@media (max-width: 768px) {
-			background-size: unset;
-		}
+		background-attachment: fixed;
 	}
 	a {
 		color: #68baff;
