@@ -3,7 +3,7 @@ import styled from 'styled-components/macro'
 import Gallery from './Gallery'
 
 const Wrapper = styled.div`
-	width: 600px;
+	width: 660px;
 	margin: 0 auto 4em;
 
 	@media (max-width: 768px) {
@@ -16,6 +16,8 @@ const Header = styled.header`
 `
 
 const Title = styled.h1`
+	font-family: "PT Serif Caption";
+	font-weight: 400;
 	font-size: 6.6rem;
 	text-align: center;
 	color: white;
@@ -24,13 +26,14 @@ const Title = styled.h1`
 	margin: .2em auto;
 
 	@media (max-width: 768px) {
-		font-size: 4.6rem;
-	}
-	@media (max-width: 375px) {
+		margin: .3em auto;
 		font-size: 4rem;
 	}
+	@media (max-width: 375px) {
+		font-size: 3.4rem;
+	}
 	@media (max-width: 320px) {
-		font-size: 3.6rem;
+		font-size: 3rem;
 	}
 `
 
@@ -40,6 +43,7 @@ const TextBox = styled.div`
 	color: white;
 	font-size: 1.6rem;
 	margin: 0 2em .4em;
+	border-radius: 2px;
 
 	&:last-child {
 		margin-bottom: 0;
