@@ -1,5 +1,17 @@
 [
 	{
+		"original": "static/img/fans/max-gustavsson.jpg",
+		"description": "Max Gustavsson"
+	},
+	{
+		"original": "static/img/fans/viktor-lundgren.jpg",
+		"description": "Viktor Lundgren"
+	},
+	{
+		"original": "static/img/fans/kevin-johansson.jpg",
+		"description": "Kevin Johansson"
+	},
+	{
 		"original": "static/img/fans/kevin-vernersson.jpg",
 		"description": "Kevin Vernersson"
 	},
