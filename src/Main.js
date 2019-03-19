@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components/macro'
 import Gallery from './Gallery'
+import instagramIcon from './_images/instagram-ico.svg'
 
 const Wrapper = styled.div`
 	width: 660px;
@@ -54,6 +55,14 @@ const TextBox = styled.div`
 	}
 `
 
+const TextBoxFlex = styled(TextBox)`
+	display: flex;
+`
+
+const InstagramIcon = styled.img`
+	margin-right: .6em;
+`
+
 class Main extends Component {
 	render() {
 		return (
@@ -62,11 +71,26 @@ class Main extends Component {
 					<Title>240 Snus it!</Title>
 				</Header>
 				<Gallery/>
+				<TextBoxFlex>
+					<InstagramIcon
+						src={instagramIcon}
+						width={33}
+						height={33}
+						alt="Insta"
+					/>
+					<div>
+						Följ oss på Instagram&nbsp;
+						<a
+							href="https://www.instagram.com/240snusit.se/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							@240snusit.se
+						</a>
+					</div>
+				</TextBoxFlex>
 				<TextBox>
-					Har du en schysst 240 eller en söt snusselfie?
-				</TextBox>
-				<TextBox>
-					Skicka in dina bilder till <a href="mailto:prillan@240snusit.se">prillan@240snusit.se</a> för att synas här!
+					Skicka in dina bilder till <a href="mailto:prillan@240snusit.se">prillan@240snusit.se</a> eller via Instagram DM för att synas här!
 				</TextBox>
 			</Wrapper>
 		)
