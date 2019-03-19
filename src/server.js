@@ -3,7 +3,7 @@ const path = require('path')
 const fs = require('fs')
 
 const app = express()
-const port = process.ENV.PORT || 3000
+const port = process.env.PORT || 3000
 
 const buildPath = path.join(__dirname, '../build')
 const indexPath = path.join(buildPath, 'index.html')
