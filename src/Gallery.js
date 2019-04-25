@@ -36,7 +36,9 @@ const GalleryContainer = styled.div`
 	}
 
 	.image-gallery-bullets {
+		width: 100%;
 		bottom: -1.6em;
+		margin: 0;
 	}
 `;
 
