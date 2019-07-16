@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components/macro'
 import Gallery from './Gallery'
+import logo from './_images/240-logo.svg'
 import instagramIcon from './_images/instagram-ico.svg'
 
 const Wrapper = styled.div`
@@ -14,27 +15,15 @@ const Wrapper = styled.div`
 
 const Header = styled.header`
 	overflow: auto;
+	text-align: center;
 `
 
-const Title = styled.h1`
-	font-family: "PT Serif Caption";
-	font-weight: 400;
-	font-size: 6.6rem;
-	text-align: center;
-	color: white;
-	text-shadow: 2px 2px 5px #383838;
-	font-weight: 400;
-	margin: .2em auto;
+const Logo = styled.img`
+	margin: 2em auto 0;
+	width: 60%;
 
 	@media (max-width: 768px) {
-		margin: .3em auto;
-		font-size: 4rem;
-	}
-	@media (max-width: 375px) {
-		font-size: 3.4rem;
-	}
-	@media (max-width: 320px) {
-		font-size: 3rem;
+		width: 70%;
 	}
 `
 
@@ -68,7 +57,10 @@ class Main extends Component {
 		return (
 			<Wrapper>
 				<Header>
-					<Title>240 Snus it!</Title>
+					<Logo
+						src={logo}
+						alt="240 Snus It"
+					/>
 				</Header>
 				<Gallery/>
 				<TextBoxFlex>

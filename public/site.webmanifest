@@ -1,6 +1,6 @@
 {
-    "name": "240 Snus it",
-    "short_name": "240 Snus it",
+    "name": "240SnusIt.se",
+    "short_name": "240SnusIt",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#fac130",
-    "background_color": "#fac130",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
     "display": "standalone"
 }
