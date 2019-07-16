@@ -40,6 +40,10 @@ const GalleryContainer = styled.div`
 		bottom: -1.6em;
 		margin: 0;
 	}
+
+	.image-gallery-bullet {
+		margin: 0 .3em;
+	}
 `;
 
 class Gallery extends Component {
