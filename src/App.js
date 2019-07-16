@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
 
 class App extends Component {
 	render() {
-		const bgImages = [4, 5, 6, 7, 8]
+		const bgImages = [6, 7, 8, 9, 10]
 		const rand = bgImages[Math.random() * bgImages.length >> 0]
 		return (
 			<React.Fragment>
