@@ -9,7 +9,6 @@ const buildPath = path.join(__dirname, '../build')
 const indexPath = path.join(buildPath, 'index.html')
 
 const index = fs.readFileSync(indexPath)
-const indexStat = fs.statSync(indexPath)
 
 app.use(express.static(buildPath, { maxage: 0 }))
 
