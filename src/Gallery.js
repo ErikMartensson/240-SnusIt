@@ -37,12 +37,12 @@ const GalleryContainer = styled.div`
 
 	.image-gallery-bullets {
 		width: 100%;
-		bottom: -1.6em;
+		bottom: -2.4em;
 		margin: 0;
 	}
 
 	.image-gallery-bullet {
-		margin: 0 .3em;
+		margin: .7em .5em 0;
 	}
 `;
 
