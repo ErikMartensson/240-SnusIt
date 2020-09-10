@@ -24,6 +24,7 @@ const GalleryContainer = styled.div`
 		box-sizing: border-box;
 		overflow: hidden;
 		border-radius: 50%;
+		border: solid 8px rgba(0, 0, 0, .8);
 	}
 
 	.image-gallery-description {

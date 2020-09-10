@@ -5,7 +5,7 @@ import logo from './_images/240-logo.svg'
 import instagramIcon from './_images/instagram-ico.svg'
 
 const Wrapper = styled.div`
-	width: 660px;
+	width: 900px;
 	margin: 0 auto 4em;
 
 	@media (max-width: 768px) {
@@ -19,7 +19,7 @@ const Header = styled.header`
 `
 
 const Logo = styled.img`
-	margin: 2em auto 0;
+	margin: 1em auto 0;
 	width: 60%;
 
 	@media (max-width: 768px) {
@@ -82,7 +82,7 @@ class Main extends Component {
 					</div>
 				</TextBoxFlex>
 				<TextBox>
-					Skicka in dina bilder till <a href="mailto:prillan@240snusit.se">prillan@240snusit.se</a> eller via Instagram DM för att synas här!
+					Skicka in dina bilder via Instagram DM för att synas här!
 				</TextBox>
 			</Wrapper>
 		)
