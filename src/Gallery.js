@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import styled from 'styled-components/macro'
+import { Component } from 'react'
+import styled from 'styled-components'
 import ImageGallery from 'react-image-gallery'
 import images from './fans.json'
-import './image-gallery.css'
+import 'react-image-gallery/styles/css/image-gallery.css';
 
 const GalleryContainer = styled.div`
 	margin: 1em auto 3em;

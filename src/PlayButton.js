@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import styled from 'styled-components/macro'
+import { Component } from 'react';
+import styled from 'styled-components'
 
 const Button = styled.div`
 	position: fixed;

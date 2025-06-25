@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { createGlobalStyle } from 'styled-components/macro'
+import { createGlobalStyle } from 'styled-components'
 import Main from './Main'
 import PlayButton from './PlayButton'
 

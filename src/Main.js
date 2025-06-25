@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import styled from 'styled-components/macro'
+import { Component } from 'react'
+import styled from 'styled-components'
 import Gallery from './Gallery'
 import logo from './_images/240-logo.svg'
 import instagramIcon from './_images/instagram-ico.svg'
