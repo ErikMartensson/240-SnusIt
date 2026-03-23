@@ -3,28 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fontsource/pt-serif-caption": "^5.2.8",
+    "@fontsource/source-sans-pro": "^5.2.5",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-image-gallery": "^1.4.0",
     "styled-components": "^6.1.19"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "vite",
+    "build": "vite build",
     "build:prod": "npm run build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "preview": "vite preview",
+    "format": "prettier --write src/"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
   "devDependencies": {
-    "react-scripts": "^5.0.1"
+    "@vitejs/plugin-react": "^4.3.4",
+    "prettier": "^3.8.1",
+    "sharp": "^0.34.5",
+    "vite": "^6.3.5",
+    "vite-plugin-compression": "^0.5.1"
   }
 }
