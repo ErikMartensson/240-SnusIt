@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fontsource/pt-serif-caption": "^5.2.8",
+    "@fontsource/source-sans-pro": "^5.2.5",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-image-gallery": "^1.4.0",
