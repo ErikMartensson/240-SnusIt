@@ -14,10 +14,12 @@
     "start": "vite",
     "build": "vite build",
     "build:prod": "npm run build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier --write src/"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
+    "prettier": "^3.8.1",
     "vite": "^6.3.5",
     "vite-plugin-compression": "^0.5.1"
   }
