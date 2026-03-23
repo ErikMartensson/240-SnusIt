@@ -1,44 +1,55 @@
-import { Component } from 'react';
+import { useState, useEffect, useRef } from 'react'
 import styled from 'styled-components'
 
-const Button = styled.div`
+const Button = styled.button`
 	position: fixed;
 	left: .2rem;
 	bottom: .2rem;
 	font-size: 2.6rem;
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
 `
 
-class PlayButton extends Component {
-	constructor(props) {
-		super(props)
-		this.state = {
-			isPlaying : false,
+function PlayButton() {
+	const [isPlaying, setIsPlaying] = useState(false)
+	const [error, setError] = useState(false)
+	const audioRef = useRef(null)
+
+	useEffect(() => {
+		const audio = new Audio('static/audio/classic.ogg')
+		audio.addEventListener('error', () => setError(true))
+		audioRef.current = audio
+		return () => {
+			audio.pause()
+			audio.removeEventListener('error', () => setError(true))
 		}
-		this.audio = new Audio('static/audio/classic.ogg')
-	}
+	}, [])
 
-	render() {
-		const isPlaying = this.state.isPlaying
-		return (
-			<Button onClick={this.playPause}>
-				{isPlaying ? '⏸️' : '▶️'}
-			</Button>
-		);
-	}
-
-	playPause = () => {
-		const isPlaying = !this.state.isPlaying
+	const playPause = () => {
+		const audio = audioRef.current
+		if (!audio || error) return
 
 		if (isPlaying) {
-			this.audio.play()
+			audio.pause()
+			setIsPlaying(false)
 		} else {
-			this.audio.pause()
+			audio.play().then(() => {
+				setIsPlaying(true)
+			}).catch(() => {
+				setError(true)
+			})
 		}
-
-		this.setState({
-			isPlaying,
-		})
 	}
+
+	if (error) return null
+
+	return (
+		<Button onClick={playPause} aria-label={isPlaying ? 'Pausa musik' : 'Spela musik'}>
+			{isPlaying ? '⏸️' : '▶️'}
+		</Button>
+	)
 }
 
 export default PlayButton

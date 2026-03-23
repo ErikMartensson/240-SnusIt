@@ -1,4 +1,3 @@
-import { Component } from 'react'
 import styled from 'styled-components'
 import Gallery from './Gallery'
 import logo from './_images/240-logo.svg'
@@ -52,41 +51,39 @@ const InstagramIcon = styled.img`
 	margin-right: .6em;
 `
 
-class Main extends Component {
-	render() {
-		return (
-			<Wrapper>
-				<Header>
-					<Logo
-						src={logo}
-						alt="240 Snus It"
-					/>
-				</Header>
-				<Gallery/>
-				<TextBoxFlex>
-					<InstagramIcon
-						src={instagramIcon}
-						width={33}
-						height={33}
-						alt="Insta"
-					/>
-					<div>
-						Följ oss på Instagram&nbsp;
-						<a
-							href="https://www.instagram.com/240snusit.se/"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							@240snusit.se
-						</a>
-					</div>
-				</TextBoxFlex>
-				<TextBox>
-					Skicka in dina bilder via Instagram DM för att synas här!
-				</TextBox>
-			</Wrapper>
-		)
-	}
+function Main() {
+	return (
+		<Wrapper>
+			<Header>
+				<Logo
+					src={logo}
+					alt="240 Snus It"
+				/>
+			</Header>
+			<Gallery />
+			<TextBoxFlex>
+				<InstagramIcon
+					src={instagramIcon}
+					width={33}
+					height={33}
+					alt="Insta"
+				/>
+				<div>
+					Följ oss på Instagram&nbsp;
+					<a
+						href="https://www.instagram.com/240snusit.se/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						@240snusit.se
+					</a>
+				</div>
+			</TextBoxFlex>
+			<TextBox>
+				Skicka in dina bilder via Instagram DM för att synas här!
+			</TextBox>
+		</Wrapper>
+	)
 }
 
 export default Main

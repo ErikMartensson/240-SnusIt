@@ -1,8 +1,7 @@
-import { Component } from 'react'
 import styled from 'styled-components'
 import ImageGallery from 'react-image-gallery'
 import images from './fans.json'
-import 'react-image-gallery/styles/css/image-gallery.css';
+import 'react-image-gallery/styles/css/image-gallery.css'
 
 const GalleryContainer = styled.div`
 	margin: 1em auto 3em;
@@ -45,26 +44,24 @@ const GalleryContainer = styled.div`
 	.image-gallery-bullet {
 		margin: .7em .5em 0;
 	}
-`;
+`
 
-class Gallery extends Component {
-	render() {
-		return (
-			<GalleryContainer>
-				<ImageGallery
-					items={images}
-					lazyLoad={true}
-					showNav={false}
-					showPlayButton={false}
-					showThumbnails={false}
-					showFullscreenButton={false}
-					showBullets={true}
-					autoPlay={true}
-					slideInterval={4000}
-				/>
-			</GalleryContainer>
-		)
-	}
+function Gallery() {
+	return (
+		<GalleryContainer>
+			<ImageGallery
+				items={images}
+				lazyLoad={true}
+				showNav={false}
+				showPlayButton={false}
+				showThumbnails={false}
+				showFullscreenButton={false}
+				showBullets={true}
+				autoPlay={true}
+				slideInterval={4000}
+			/>
+		</GalleryContainer>
+	)
 }
 
 export default Gallery
