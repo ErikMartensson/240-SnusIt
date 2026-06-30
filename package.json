@@ -18,10 +18,10 @@
     "format": "prettier --write src/"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.4",
+    "@vitejs/plugin-react": "^6.0.3",
     "prettier": "^3.8.1",
     "sharp": "^0.34.5",
-    "vite": "^6.4.2",
+    "vite": "^8.1.0",
     "vite-plugin-compression": "^0.5.1"
   }
 }
