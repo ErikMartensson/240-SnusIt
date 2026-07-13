@@ -5,10 +5,10 @@
   "dependencies": {
     "@fontsource/pt-serif-caption": "^5.2.8",
     "@fontsource/source-sans-pro": "^5.2.5",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "react-image-gallery": "^1.4.0",
-    "styled-components": "^6.1.19"
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-image-gallery": "^2.1.2",
+    "styled-components": "^6.4.3"
   },
   "scripts": {
     "start": "vite",
@@ -18,10 +18,10 @@
     "format": "prettier --write src/"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.4",
-    "prettier": "^3.8.1",
-    "sharp": "^0.34.5",
-    "vite": "^6.4.2",
-    "vite-plugin-compression": "^0.5.1"
+    "@vitejs/plugin-react": "^6.0.3",
+    "prettier": "^3.9.5",
+    "sharp": "^0.35.3",
+    "vite": "^8.1.4",
+    "vite-plugin-compression2": "^2.5.3"
   }
 }
