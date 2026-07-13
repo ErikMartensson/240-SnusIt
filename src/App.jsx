@@ -1,19 +1,13 @@
 import { createGlobalStyle } from 'styled-components'
+import Background from './Background'
 import Main from './Main'
 import PlayButton from './PlayButton'
 
 const GlobalStyle = createGlobalStyle`
-  html {
-    height: 100vh;
-  }
   body {
     font-family: "Source Sans Pro";
     font-weight: 300;
-    background:
-      linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0)),
-      url(/static/img/bg${(props) => props.$img}.jpg) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: #191919;
   }
   a {
     color: #68baff;
@@ -24,13 +18,11 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const bgImages = [6, 7, 8, 9, 10, 11, 12, 13]
-const rand = bgImages[Math.floor(Math.random() * bgImages.length)]
-
 function App() {
   return (
     <>
-      <GlobalStyle $img={rand} />
+      <GlobalStyle />
+      <Background />
       <Main />
       <PlayButton />
     </>

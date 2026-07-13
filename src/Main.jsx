@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Gallery from './Gallery'
+import FanWall from './FanWall'
 import logo from './_images/240-logo.svg'
 import instagramIcon from './_images/instagram-ico.svg'
 
@@ -57,7 +57,7 @@ function Main() {
       <Header>
         <Logo src={logo} alt="240 Snus It" />
       </Header>
-      <Gallery />
+      <FanWall />
       <TextBoxFlex>
         <InstagramIcon src={instagramIcon} width={33} height={33} alt="Insta" />
         <div>

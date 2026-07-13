@@ -1,106 +1,106 @@
 [
   {
-    "original": "static/img/fans/kenny-alexandersson.webp",
-    "description": "Kenny Alexandersson"
+    "image": "/static/img/fans/kenny-alexandersson.webp",
+    "name": "Kenny Alexandersson"
   },
   {
-    "original": "static/img/fans/nicholas-sjogren.webp",
-    "description": "Nicho @nicho_s1"
+    "image": "/static/img/fans/nicholas-sjogren.webp",
+    "name": "Nicho @nicho_s1"
   },
   {
-    "original": "static/img/fans/emil-christensen.webp",
-    "description": "Emil"
+    "image": "/static/img/fans/emil-christensen.webp",
+    "name": "Emil"
   },
   {
-    "original": "static/img/fans/dt-macke.webp",
-    "description": "DT-Macke"
+    "image": "/static/img/fans/dt-macke.webp",
+    "name": "DT-Macke"
   },
   {
-    "original": "static/img/fans/basse.webp",
-    "description": "Basse"
+    "image": "/static/img/fans/basse.webp",
+    "name": "Basse"
   },
   {
-    "original": "static/img/fans/kristoffer.webp",
-    "description": "Kristoffer"
+    "image": "/static/img/fans/kristoffer.webp",
+    "name": "Kristoffer"
   },
   {
-    "original": "static/img/fans/cesar-bellhagen.webp",
-    "description": "Cesar Bellhagen"
+    "image": "/static/img/fans/cesar-bellhagen.webp",
+    "name": "Cesar Bellhagen"
   },
   {
-    "original": "static/img/fans/jacob.webp",
-    "description": "Samuel, Jacob & David"
+    "image": "/static/img/fans/jacob.webp",
+    "name": "Samuel, Jacob & David"
   },
   {
-    "original": "static/img/fans/alltpadack.webp",
-    "description": "Pärlan - Ägare: @alltpadack"
+    "image": "/static/img/fans/alltpadack.webp",
+    "name": "Pärlan - Ägare: @alltpadack"
   },
   {
-    "original": "static/img/fans/mattias-johansson.webp",
-    "description": "Mattias Johansson"
+    "image": "/static/img/fans/mattias-johansson.webp",
+    "name": "Mattias Johansson"
   },
   {
-    "original": "static/img/fans/2farshsnusit.webp",
-    "description": "@2färshsnusit"
+    "image": "/static/img/fans/2farshsnusit.webp",
+    "name": "@2färshsnusit"
   },
   {
-    "original": "static/img/fans/emil-stenman.webp",
-    "description": "Emil Stenman"
+    "image": "/static/img/fans/emil-stenman.webp",
+    "name": "Emil Stenman"
   },
   {
-    "original": "static/img/fans/geddan.webp",
-    "description": "Geddan"
+    "image": "/static/img/fans/geddan.webp",
+    "name": "Geddan"
   },
   {
-    "original": "static/img/fans/max-gustavsson.webp",
-    "description": "Max Gustavsson"
+    "image": "/static/img/fans/max-gustavsson.webp",
+    "name": "Max Gustavsson"
   },
   {
-    "original": "static/img/fans/jonas-ek.webp",
-    "description": "Jonas Ek"
+    "image": "/static/img/fans/jonas-ek.webp",
+    "name": "Jonas Ek"
   },
   {
-    "original": "static/img/fans/kevin-johansson.webp",
-    "description": "Kevin Johansson"
+    "image": "/static/img/fans/kevin-johansson.webp",
+    "name": "Kevin Johansson"
   },
   {
-    "original": "static/img/fans/kevin-vernersson.webp",
-    "description": "Kevin Vernersson"
+    "image": "/static/img/fans/kevin-vernersson.webp",
+    "name": "Kevin Vernersson"
   },
   {
-    "original": "static/img/fans/william.webp",
-    "description": "William"
+    "image": "/static/img/fans/william.webp",
+    "name": "William"
   },
   {
-    "original": "static/img/fans/albin-eriksson.webp",
-    "description": "Albin Eriksson"
+    "image": "/static/img/fans/albin-eriksson.webp",
+    "name": "Albin Eriksson"
   },
   {
-    "original": "static/img/fans/gustav-as.webp",
-    "description": "Gustav Ås"
+    "image": "/static/img/fans/gustav-as.webp",
+    "name": "Gustav Ås"
   },
   {
-    "original": "static/img/fans/martin-kaspar.webp",
-    "description": "Martin & Kaspar"
+    "image": "/static/img/fans/martin-kaspar.webp",
+    "name": "Martin & Kaspar"
   },
   {
-    "original": "static/img/fans/binorsk.webp",
-    "description": "Binorsk"
+    "image": "/static/img/fans/binorsk.webp",
+    "name": "Binorsk"
   },
   {
-    "original": "static/img/fans/emil-wallen.webp",
-    "description": "Emil Wallen"
+    "image": "/static/img/fans/emil-wallen.webp",
+    "name": "Emil Wallen"
   },
   {
-    "original": "static/img/fans/carl-heydl.webp",
-    "description": "Carl Heydl"
+    "image": "/static/img/fans/carl-heydl.webp",
+    "name": "Carl Heydl"
   },
   {
-    "original": "static/img/fans/ville-ericsson.webp",
-    "description": "Ville Ericsson"
+    "image": "/static/img/fans/ville-ericsson.webp",
+    "name": "Ville Ericsson"
   },
   {
-    "original": "static/img/fans/oscar-englundh.webp",
-    "description": "Oscar Englundh"
+    "image": "/static/img/fans/oscar-englundh.webp",
+    "name": "Oscar Englundh"
   }
 ]
