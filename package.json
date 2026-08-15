@@ -2,12 +2,13 @@
   "name": "240snusit",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
-    "@fontsource/pt-serif-caption": "^5.2.8",
-    "@fontsource/source-sans-pro": "^5.2.5",
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7",
-    "styled-components": "^6.4.3"
+    "@fontsource/pt-serif-caption": "^5.3.0",
+    "@fontsource/source-sans-pro": "^5.3.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "styled-components": "^6.5.3"
   },
   "scripts": {
     "start": "vite",
@@ -17,10 +18,10 @@
     "format": "prettier --write src/"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^6.0.3",
-    "prettier": "^3.9.5",
+    "@vitejs/plugin-react": "^6.0.5",
+    "prettier": "^3.9.6",
     "sharp": "^0.35.3",
-    "vite": "^8.1.4",
+    "vite": "^8.2.1",
     "vite-plugin-compression2": "^2.5.3"
   }
 }
