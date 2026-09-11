@@ -20,7 +20,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^6.0.5",
     "prettier": "^3.9.6",
-    "sharp": "^0.35.3",
+    "sharp": "^0.35.4",
     "vite": "^8.2.1",
     "vite-plugin-compression2": "^2.5.3"
   }
